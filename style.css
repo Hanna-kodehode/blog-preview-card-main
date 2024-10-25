@@ -1,0 +1,132 @@
+/* * {
+  outline: 1px solid red;
+}*/
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+  --main-font-family: "Figtree";
+  --main-bg-color: #f4d04e;
+  --main-color: #121212;
+}
+
+html,
+body {
+  background-color: var(--main-bg-color);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 50%;
+  max-width: 37.5rem;
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.6rem;
+  border: solid var(--main-color) 0.05rem;
+  box-shadow: 0.6rem 0.6rem 0 var(--main-color);
+}
+
+@media (max-width: 720px) {
+  main {
+    width: 75%;
+  }
+}
+
+main :first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 0;
+  height: auto;
+}
+
+main:first-child img {
+  border-radius: 10px;
+}
+
+header {
+  margin: 1.6rem 0 0 0;
+}
+
+#yellowbox {
+  background-color: var(--main-bg-color);
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  width: 4.5rem;
+  max-width: 45%;
+}
+
+header p {
+  font-size: 0.75rem;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+}
+
+h1 {
+  cursor: pointer;
+  font-family: var(--main-font-family);
+  font-weight: 800;
+  font-size: clamp(0.1rem 1.5rem);
+  max-width: 100%;
+}
+
+h1:hover {
+  color: var(--main-bg-color);
+}
+
+h2 {
+  font-family: var(--main-font-family);
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: var(--main-font-family);
+}
+
+section p {
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  color: #6b6b6b;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#portrait {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+}
+
+footer p {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.attribution {
+  display: flex;
+  align-items: end;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(0, 0, 228, 0.841);
+  position: fixed;
+  bottom: 0;
+}
